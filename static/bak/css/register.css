@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 2rem 2rem 0 2rem;
+    overflow-x: hidden;
+}
+.background{
+    pointer-events: none;
+    background-image: url("../img/background.jpg");
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-image-repeat: round;
+    background-size: 100% 100%;
+}
+.header{
+    border: 2px solid black;
+    background-color: #D0D0D0;
+    word-break: break-all;
+}
+.header h1{
+    margin: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.header p{
+    font-style: italic;
+    margin: 0 0 2rem 2rem;
+    color: #8D8D8D;
+    font-size: 0.8rem;
+}
+.desc{
+    margin: 3rem 0 0 0;
+}
+.desc h1{
+    display: inline-block;
+    font-weight: bold;
+}
+.desc span{
+    color: #8D8D8D;
+}
+.desc div{
+    font-size: 0.8rem;
+    margin: 1rem 0 1rem 0;
+}
+.desc hr{
+    margin-bottom: 3rem;
+}
+.button{
+    border-radius: 5px;
+    padding: 0 1rem;
+    background-image: linear-gradient(to bottom, white, white, #D0D0D0);
+}
+.text{
+    border-radius: 50rem;
+}
+.msg{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.msg .loading{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.ok{
+    font-weight: bold;
+    font-size: 2rem;
+    border: #00FF00 solid 1px;
+}
+.fail{
+    font-weight: bold;
+    font-size: 2rem;
+    border: red solid 1px;
+}
+@media screen and (max-width: 767px) and (min-width: 319px){
+    .header h1{
+        font-size: 2rem;
+    }
+    .header p{  
+        margin: 0.8rem;
+    }
+    .text{
+        font-size: 1.5rem;
+    }
+}
